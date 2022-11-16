@@ -26,7 +26,7 @@ The Question Answering System (QAS):
 	```
   
 *  Requirements <br />
-	Python version : 2.7  <br />
+	Python version : 3  <br />
   Operating System: Windows
 
   
@@ -67,13 +67,13 @@ The Question Answering System (QAS):
 
 
 ## To Run
-1. Install python 2.7 to your system
+1. Install python
 2. Install the packages givn in the requirements.txt file
 3. Open command prompt.
 4. Go to the directory in command prompt.
 5. Type in command prompt: 
     ```
-    py -2 app.py
+    python3 app.py
     ```
 6. Now run the browser and type localhost:9191/
 7. Input your question. (Make sure, you are connected to Internet)
