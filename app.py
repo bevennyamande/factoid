@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
-from flask_appconfig import AppConfig
 from flask_wtf import Form, RecaptchaField
 from wtforms import TextField, HiddenField, ValidationError, RadioField, BooleanField, SubmitField
 from wtforms.validators import Required
@@ -21,7 +20,6 @@ class ExampleForm(Form):
 
 def create_app(configfile=None):
     app = Flask(__name__)
-    AppConfig(app, configfile)
     Bootstrap(app)
 
 
@@ -59,7 +57,7 @@ def create_app(configfile=None):
 app = create_app()
 
 if __name__ == '__main__':
-    http_server = WSGIServer(('127.0.0.1', 9191), app)
+    http_server = WSGIServer(('127.0.0.1', 5000), app)
     print("starting server on port 9191")
     http_server.serve_forever()
     
