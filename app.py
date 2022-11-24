@@ -5,7 +5,7 @@ import gevent.monkey
 from gevent.pywsgi import WSGIServer
 gevent.monkey.patch_all()
 
-from give_answer import answer_question
+from answers import answer_question
 import unicodedata
 import wolframalpha
 import wikipedia
