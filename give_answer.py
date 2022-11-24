@@ -1,7 +1,8 @@
 import unicodedata
 import wolframalpha
 from nltk import word_tokenize, pos_tag, ne_chunk, conlltags2tree, tree2conlltags
-from google import google
+# from google import google
+from googlesearch import search
 import wikipedia
 import collections
 
@@ -25,7 +26,7 @@ def classify_question(question):
 
 #===============================================================
 def google_search(question):
-    first_page = google.search(question,1)
+    first_page = search(question,1)
     #print first_page
     top_three_result = []
     i = 0

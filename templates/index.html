@@ -1,5 +1,4 @@
 {% extends "bootstrap/base.html" %}
-{% import "bootstrap/wtf.html" as wtf %}
 {% import "bootstrap/fixes.html" as fixes %}
 
 {% block title %}QAS{% endblock %}
@@ -14,7 +13,9 @@
   <br>
   <h2 style="color:blue;"><center>What's your Question?</center></h2>
   <center>
-  {{ wtf.quick_form(form, button_map={'submit_button': 'primary'}) }}
+    <form>
+<input type="text" id="fname" name="fname"> 
+    </form>
 </center>
 </div>
 
