@@ -99,7 +99,7 @@ def answer_question(question):
     try:
         app_id = ''    # add your app id into this
         if not app_id:
-            print('Add your app id in line no. 110')
+            print('Add your app id in line no. 100')
         client = wolframalpha.Client(app_id)
         res = client.query(question)
         ans = str(next(res.results).text).replace('.', '.\n')

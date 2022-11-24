@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
-from flask_wtf import Form, RecaptchaField
 import re
 import gevent.monkey
 from gevent.pywsgi import WSGIServer
