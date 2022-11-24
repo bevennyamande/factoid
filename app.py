@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 from flask_wtf import Form, RecaptchaField
-from wtforms import TextField, SubmitField
-from wtforms.validators import Required
 import re
 import gevent.monkey
 from gevent.pywsgi import WSGIServer
@@ -12,10 +10,6 @@ from give_answer import answer_question
 import unicodedata
 import wolframalpha
 import wikipedia
-
-class ExampleForm(Form):
-    question = TextField('', description='')
-    submit_button = SubmitField('Search')
 
 
 def create_app(configfile=None):
@@ -46,8 +40,7 @@ def create_app(configfile=None):
 
             return render_template('answer.html', answer=answer, question=question)
 
-        form = ExampleForm()
-        return render_template('index.html', form=form)
+        return render_template('index.html')
 
 
 

@@ -1,7 +1,7 @@
 {% extends "bootstrap/base.html" %}
 {% import "bootstrap/fixes.html" as fixes %}
 
-{% block title %}QAS{% endblock %}
+{% block title %}Factoid based Question Answering System{% endblock %}
 
 {% block content %}
 <div class="container">
@@ -13,8 +13,9 @@
   <br>
   <h2 style="color:blue;"><center>What's your Question?</center></h2>
   <center>
-    <form>
-<input type="text" id="fname" name="fname"> 
+    <form action="" method="post">
+      <input class="form-control form-control-md" type="text" placeholder="Whats your question" aria-label=".form-control-md example" name="question" value="">
+      <button class="btn btn-primary" type="submit">search</button>
     </form>
 </center>
 </div>

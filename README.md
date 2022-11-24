@@ -22,14 +22,10 @@ The Question Answering System (QAS):
 
 * Clone the source
 	```
-	git clone https://github.com/Upa005/Question-Answering-System.git
+	git clone https://github.com/bevennyamande/factoid.git
 	```
   
 *  Requirements <br />
-	Python version : 2.7  <br />
-  Operating System: Windows
-
-  
 * Python Packages required <br />
 
   nltk <br />
@@ -42,7 +38,6 @@ The Question Answering System (QAS):
   flask_bootstrap <br />
   flask_appconfig <br />
   flask_wtf <br />
-  wtforms <br />
   google <br />
 
 
@@ -56,10 +51,6 @@ The Question Answering System (QAS):
   3. Open Question-Answering-System/app.py program. 
      Search this sentence in the program. (At line number 28)
      ```
-     app.config['SECRET_KEY']= ## insert your secret key
-     ```
-     Now insert your secret key after '=' sign
-     ```
      Example: app.config['SECRET_KEY']= '\\ffedg0890489574'
 
      ```
@@ -67,15 +58,15 @@ The Question Answering System (QAS):
 
 
 ## To Run
-1. Install python 2.7 to your system
-2. Install the packages givn in the requirements.txt file
+1. Install python to your system
+2. Install the packages given in the requirements.txt file
 3. Open command prompt.
 4. Go to the directory in command prompt.
 5. Type in command prompt: 
     ```
-    py -2 app.py
+    python app.py
     ```
-6. Now run the browser and type localhost:9191/
+6. Now run the browser and type localhost:5000/
 7. Input your question. (Make sure, you are connected to Internet)
 8. Wait for the answer
 
